@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html class="no-js" lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Zmovo - Online Movie Video And TV Show HTML Bootstrap 4 Template">
+    <meta name="keywords" content="Zmovo - Online Movie Video And TV Show HTML Bootstrap 4 Template">
+    <meta name="author" content="Themepul">
+    <title>Zmovo - Online Movie Video And TV Show HTML Bootstrap 4 Template</title>
+ 
+
+</head>
+
+<body>
+   
+     
+        <!-- breadcroumb-area -->
+        <div class="zmovo-breadcroumb-area">
+            <div class="zmovo-breadcroumb-bg">
+                <div class="container">
+                    <div class="zmovo-breadcroumb-inner text-center">
+                        <h2>Contact Us</h2>
+                        <span>Contact Us</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End breadcroumb-area -->
+        <div class="zmoto-inner-page">
+            <div class="zmovo-contact-page">
+                <div class="container  pt-50 pb-50 ">
+                    
+                    <div class="zmovo-contactpage-area">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div class="comment-respond">
+                                    <div class="respons-box">
+                                        <div class="form">
+                                            <form method="post">
+                                                {% csrf_token %}
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="name">Nick Name :</label>
+                                                            <input id="name" class="form-control form-mane" required=""    name="name" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="email">E-mail :</label>
+                                                            <input id="email" class="form-control form-email" required="" name="email" placeholder="Email"type="email">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="message">Write a Message :</label>
+                                                    <textarea id="message" class="form-control form-comment" cols="10" rows="8" name="message" placeholder="Message"required=""></textarea>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button type="submit" value="submit" class="btn" id="btn_submit" onClick="proceed();" style="color:red  " >Send Message</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="contact-widget">
+                                    <h5 class="contact-widget-title no-margin"><span>Contact info</span></h5>
+                                    <div class="textwidget">
+                                        <p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed loram ipsum</p>
+                                        <ul>
+                                            <li>
+                                                <label><i class="fa fa-map-marker"></i></label> dambo dika,USA rode #420</li>
+                                            <li>
+                                                <label><i class="fa fa-envelope"></i></label><a href="#">zmovo@gamil.com</a></li>
+                                            <li>
+                                                <label><i class="fa fa-phone"></i></label>(+990 ) 987 25 145</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+
+
+</body>
+
+</html>
+
+
+{% endblock  %}

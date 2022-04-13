@@ -1,0 +1,83 @@
+{% load static %}
+<div class="zmovo-main dark-img">
+    <!-- Preloader -->
+    <div class="zmovo-preloader">
+        <div class="boxes">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+<header class="zmovo-header zmovo-header3">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-2 zmovo-logos">
+                <div class="zmovo-logo">
+                    <a href="#"><img src="{% static 'image/logo.png' %}" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-8 zmovo-menus">
+                <div class="main-menu">
+                    <div class="navigation">
+                        <div class="menu-container">
+                            <div id="navigation">
+                                <ul>
+                                    <li class="active has-sub"><span class="submenu-button"></span><a href="{% url 'home:home'  %}">Home</a>
+                                        
+                                    </li>
+                                    <li><a href="{% url 'movie:tailor'  %}">Trailor</a></li>
+                                    <li><a href="{% url 'home:about' %}">About</a></li>
+                                    <li><a href="   {% url 'movie:grid'  %}">Product</a></li>
+                                  
+                                    </li>
+                                    <li class="has-sub"><span class="submenu-button"></span><a href="{% url 'blog:blog' %}">blog</a>
+                                        <ul>
+                                            <li class="has-sub"><span class="submenu-button"></span><a href="{% url 'blog:blog_detail' %}">Blog detail</a>
+        
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url 'contact:feedback' %}">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 zmovo-t-right">
+                <div class="zmovo-header-right">
+                    <div class="zmovo-top-search">
+                        <div class="zmovo-ser-icon" id="clickserch"><span class="fa fa-search"></span></div>
+                        <div class="zmovo-hidden-search" id="opensearch">
+                            <input type="search" placeholder="Enter the movie Name">
+                        </div>
+                    </div>
+                    <div class="zmovo-login">
+                        <a href="login.html" class="btn login-btn"><span class="fa fa-user"></span> Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

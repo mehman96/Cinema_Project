@@ -1,0 +1,681 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<!-- Mirrored from demos.themepul.com/zmovo/grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Apr 2022 08:03:14 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Zmovo - Online Movie Video And TV Show HTML Bootstrap 4 Template">
+    <meta name="keywords" content="Zmovo - Online Movie Video And TV Show HTML Bootstrap 4 Template">
+    <meta name="author" content="Themepul">
+    <title>Zmovo - Online Movie Video And TV Show HTML Bootstrap 4 Template</title>
+
+</head>
+
+<body>
+  
+        <!-- breadcroumb-area -->
+        <div class="zmovo-breadcroumb-area">
+            <div class="zmovo-breadcroumb-bg">
+                <div class="container">
+                    <div class="zmovo-breadcroumb-inner text-center">
+                        <h2>Product Grid</h2>
+                        <span>Product Grid</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End breadcroumb-area -->
+        <div class="zmoto-inner-page">
+            <div class="zmovo-product-page pt-50">
+                <div class="container">
+                    <!-- Product Filter -->
+                    <div class="product-filter mb-30">
+                        <div class="product-filter-inner">
+                            <div class="row">
+                                <!-- LIST VIEW OR GRID VIEW -->
+                                <div class="col-12 col-md-3 col-lg-4 sm-width">
+                                    <div class="product-filter-list">
+                                        <ul class="nav" role="tablist">
+                                            <li class="active"> <a href="#grid" class="active show" role="tab" data-toggle="tab"><i class="fa fa-th"></i></a></li>
+                                            <li> <a href="#list" data-toggle="tab" role="tab"><i class="fa fa-th-list"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- END LIST VIEW OR GRID VIEW -->
+                                <!-- SHORT BY -->
+                                <div class="col-12 col-md-5 col-lg-4 sm-width">
+                                    <div class="product-filter-list">
+                                        <div class="short-by-show form-inline2">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-6">
+                                                    <div class="short-by">
+                                                        <select class="selectpicker" data-live-search="true">
+                                                            <option value="" selected="selected">Sort By:</option>
+                                                            <option value="">Name (A - Z)</option>
+                                                            <option value="">Name (Z - A)</option>
+                                                            <option value="">Price (Low &gt; High)</option>
+                                                            <option value="">Price (High &gt; Low)</option>
+                                                            <option value="">Rating (Highest)</option>
+                                                            <option value="">Rating (Lowest)</option>
+                                                            <option value="">Model (A - Z)</option>
+                                                            <option value="">Model (Z - A)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-6">
+                                                    <div class="pro-show">
+                                                        <select class="selectpicker" data-live-search="true">
+                                                            <option value="" selected="selected">Show:</option>
+                                                            <option value="">25</option>
+                                                            <option value="">50</option>
+                                                            <option value="">75</option>
+                                                            <option value="">100</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END SHORT BY -->
+                                <!-- PAGINATION -->
+                                <div class="ccol-12 col-md-4 col-lg-4 pro-pagination sm-width">
+                                    <div class="product-filter-list">
+                                        <div class="pagination-wrapper">
+                                            <nav aria-label="navigations">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link pagefirst" href="#"><i class="fa fa-angle-left"></i></a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link lastpage" href="#"><i class="fa fa-angle-right"></i></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END PAGINATION -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Product Filter -->
+                    <div class="product-items">
+                        <div class="product-items-inner">
+                            <div class="zmovo-product-list">
+                                <div class="tab-pane fade active in show" id="grid" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="item">
+                                                <div class="zmovo-video-item-box pb-30">
+                                                    <div class="zmovo-video-box-inner">
+                                                        <div class="zmovo-v-box-img gradient">
+                                                            <img src="{% static 'image/product/270/1.jpg' %}" alt="">
+                                                            <div class="ply-btns">
+                                                                <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                            </div>
+                                                            <div class="zmovo-v-box-content">
+                                                                <a href="#">The Happy Nutcracker and the Four Realms</a>
+                                                                <div class="zmovo-v-tag c2">
+                                                                    <span>Romance, English, 2019</span>
+                                                                </div>
+                                                                <div class="movie-time"><i class="fa fa-clock-o c1"></i><span>2 Hr 3 Min</span></div>
+                                                                <div class="like-icon">
+                                                                    <a href="#"><span class="fa fa-heart-o"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="item">
+                                                <div class="zmovo-video-item-box pb-30">
+                                                    <div class="zmovo-video-box-inner">
+                                                        <div class="zmovo-v-box-img gradient">
+                                                            <img src="{% static 'image/product/270/2.jpg' %}" alt="">
+                                                            <div class="ply-btns">
+                                                                <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                            </div>
+                                                            <div class="zmovo-v-box-content">
+                                                                <a href="#">A Boy and His God Nutcracker and the Four Realms</a>
+                                                                <div class="zmovo-v-tag c2">
+                                                                    <span>Romance, English, 2019</span>
+                                                                </div>
+                                                                <div class="movie-time"><i class="fa fa-clock-o c1"></i><span>2 Hr 3 Min</span></div>
+                                                                <div class="like-icon">
+                                                                    <a href="#"><span class="fa fa-heart-o"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="item">
+                                                <div class="zmovo-video-item-box pb-30">
+                                                    <div class="zmovo-video-box-inner">
+                                                        <div class="zmovo-v-box-img gradient">
+                                                            <img src="{% static 'image/product/270/3.jpg' %}" alt="">
+                                                            <div class="ply-btns">
+                                                                <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                            </div>
+                                                            <div class="zmovo-v-box-content">
+                                                                <a href="#">Buddy Holly Past Life and the Four Realms</a>
+                                                                <div class="zmovo-v-tag c2">
+                                                                    <span>Romance, English, 2019</span>
+                                                                </div>
+                                                                <div class="movie-time"><i class="fa fa-clock-o c1"></i><span>2 Hr 3 Min</span></div>
+                                                                <div class="like-icon">
+                                                                    <a href="#"><span class="fa fa-heart-o"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="item">
+                                                <div class="zmovo-video-item-box pb-30">
+                                                    <div class="zmovo-video-box-inner">
+                                                        <div class="zmovo-v-box-img gradient">
+                                                            <img src="{% static 'image/product/270/4.jpg' %}" alt="">
+                                                            <div class="ply-btns">
+                                                                <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                            </div>
+                                                            <div class="zmovo-v-box-content">
+                                                                <a href="#">Millipede Dreams of Christmas and the Four Realms</a>
+                                                                <div class="zmovo-v-tag c2">
+                                                                    <span>Romance, English, 2019</span>
+                                                                </div>
+                                                                <div class="movie-time"><i class="fa fa-clock-o c1"></i><span>2 Hr 3 Min</span></div>
+                                                                <div class="like-icon">
+                                                                    <a href="#"><span class="fa fa-heart-o"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="item">
+                                                <div class="zmovo-video-item-box pb-30">
+                                                    <div class="zmovo-video-box-inner">
+                                                        <div class="zmovo-v-box-img gradient">
+                                                            <img src="{% static 'image/product/270/5.jpg' %}" alt="">
+                                                            <div class="ply-btns">
+                                                                <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                            </div>
+                                                            <div class="zmovo-v-box-content">
+                                                                <a href="#">Alice B. Toklas in Wonderland and the Four Realms</a>
+                                                                <div class="zmovo-v-tag c2">
+                                                                    <span>Romance, English, 2019</span>
+                                                                </div>
+                                                                <div class="movie-time"><i class="fa fa-clock-o c1"></i><span>2 Hr 3 Min</span></div>
+                                                                <div class="like-icon">
+                                                                    <a href="#"><span class="fa fa-heart-o"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="item">
+                                                <div class="zmovo-video-item-box pb-30">
+                                                    <div class="zmovo-video-box-inner">
+                                                        <div class="zmovo-v-box-img gradient">
+                                                            <img src="{% static 'image/product/270/6.jpg' %}" alt="">
+                                                            <div class="ply-btns">
+                                                                <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                            </div>
+                                                            <div class="zmovo-v-box-content">
+                                                                <a href="#">Wonderland Some Are Confidants and the Four Realms</a>
+                                                                <div class="zmovo-v-tag c2">
+                                                                    <span>Romance, English, 2019</span>
+                                                                </div>
+                                                                <div class="movie-time"><i class="fa fa-clock-o c1"></i><span>2 Hr 3 Min</span></div>
+                                                                <div class="like-icon">
+                                                                    <a href="#"><span class="fa fa-heart-o"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="item">
+                                                <div class="zmovo-video-item-box pb-30">
+                                                    <div class="zmovo-video-box-inner">
+                                                        <div class="zmovo-v-box-img gradient">
+                                                            <img src="{% static 'image/product/270/7.jpg' %}" alt="">
+                                                            <div class="ply-btns">
+                                                                <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                            </div>
+                                                            <div class="zmovo-v-box-content">
+                                                                <a href="#">Days of Promise Days of Hope and the Four Realms</a>
+                                                                <div class="zmovo-v-tag c2">
+                                                                    <span>Romance, English, 2019</span>
+                                                                </div>
+                                                                <div class="movie-time"><i class="fa fa-clock-o c1"></i><span>2 Hr 3 Min</span></div>
+                                                                <div class="like-icon">
+                                                                    <a href="#"><span class="fa fa-heart-o"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="item">
+                                                <div class="zmovo-video-item-box pb-30">
+                                                    <div class="zmovo-video-box-inner">
+                                                        <div class="zmovo-v-box-img gradient">
+                                                            <img src="{% static 'image/product/270/8.jpg' %}" alt="">
+                                                            <div class="ply-btns">
+                                                                <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                            </div>
+                                                            <div class="zmovo-v-box-content">
+                                                                <a href="#">Devastating the Obvious Nutcracker and the Four Realms</a>
+                                                                <div class="zmovo-v-tag c2">
+                                                                    <span>Romance, English, 2019</span>
+                                                                </div>
+                                                                <div class="movie-time"><i class="fa fa-clock-o c1"></i><span>2 Hr 3 Min</span></div>
+                                                                <div class="like-icon">
+                                                                    <a href="#"><span class="fa fa-heart-o"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="item">
+                                                <div class="zmovo-video-item-box pb-30">
+                                                    <div class="zmovo-video-box-inner">
+                                                        <div class="zmovo-v-box-img gradient">
+                                                            <img src="{% static 'image/product/270/9.jpg' %}" alt="">
+                                                            <div class="ply-btns">
+                                                                <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                            </div>
+                                                            <div class="zmovo-v-box-content">
+                                                                <a href="#">The Fair Weather Father Nutcracker and the Four Realms</a>
+                                                                <div class="zmovo-v-tag c2">
+                                                                    <span>Romance, English, 2019</span>
+                                                                </div>
+                                                                <div class="movie-time"><i class="fa fa-clock-o c1"></i><span>2 Hr 3 Min</span></div>
+                                                                <div class="like-icon">
+                                                                    <a href="#"><span class="fa fa-heart-o"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="item">
+                                                <div class="zmovo-video-item-box pb-30">
+                                                    <div class="zmovo-video-box-inner">
+                                                        <div class="zmovo-v-box-img gradient">
+                                                            <img src="{% static 'image/product/270/10.jpg' %}" alt="">
+                                                            <div class="ply-btns">
+                                                                <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                            </div>
+                                                            <div class="zmovo-v-box-content">
+                                                                <a href="#">Flowers for Algernon II and the Four Realms</a>
+                                                                <div class="zmovo-v-tag c2">
+                                                                    <span>Romance, English, 2019</span>
+                                                                </div>
+                                                                <div class="movie-time"><i class="fa fa-clock-o c1"></i><span>2 Hr 3 Min</span></div>
+                                                                <div class="like-icon">
+                                                                    <a href="#"><span class="fa fa-heart-o"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="item">
+                                                <div class="zmovo-video-item-box pb-30">
+                                                    <div class="zmovo-video-box-inner">
+                                                        <div class="zmovo-v-box-img gradient">
+                                                            <img src="{% static 'image/product/270/11.jpg' %}" alt="">
+                                                            <div class="ply-btns">
+                                                                <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                            </div>
+                                                            <div class="zmovo-v-box-content">
+                                                                <a href="#">Gumby on a Hot Tin Roof and the Four Realms</a>
+                                                                <div class="zmovo-v-tag c2">
+                                                                    <span>Romance, English, 2019</span>
+                                                                </div>
+                                                                <div class="movie-time"><i class="fa fa-clock-o c1"></i><span>2 Hr 3 Min</span></div>
+                                                                <div class="like-icon">
+                                                                    <a href="#"><span class="fa fa-heart-o"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="item">
+                                                <div class="zmovo-video-item-box pb-30">
+                                                    <div class="zmovo-video-box-inner">
+                                                        <div class="zmovo-v-box-img gradient">
+                                                            <img src="{% static 'image/product/270/12.jpg' %}" alt="">
+                                                            <div class="ply-btns">
+                                                                <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                            </div>
+                                                            <div class="zmovo-v-box-content">
+                                                                <a href="#">Happy in Spite of Myself Nutcracker and the Four Realms</a>
+                                                                <div class="zmovo-v-tag c2">
+                                                                    <span>Romance, English, 2019</span>
+                                                                </div>
+                                                                <div class="movie-time"><i class="fa fa-clock-o c1"></i><span>2 Hr 3 Min</span></div>
+                                                                <div class="like-icon">
+                                                                    <a href="#"><span class="fa fa-heart-o"></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade active in" id="list" role="tabpanel">
+                                    <div class="zmovo-product-list mb-30">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-5">
+                                                <div class="zmovo-product-list-item zmovo-v-box-img gradient">
+                                                    <img src="{% static 'image/product/350/1.jpg' %}" alt="">
+                                                    <div class="ply-btns">
+                                                        <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 col-md-7">
+                                                <div class="zmovo-product-list-dec">
+                                                    <div class="zmovo-trailor-meta-info">
+                                                        <div class="dec-review-dec">
+                                                            <div class="details-title">
+                                                                <a href="#">Hurry Animate Blue Strack New Movie (2018)</a>
+                                                            </div>
+                                                            <div class="ratting">
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <a href="#">6/5 ratitng</a>
+                                                            </div>
+                                                            <div class="dec-review-meta">
+                                                                <ul>
+                                                                    <li><span>Category <label>:</label></span><a href="#">English Animation Movies</a></li>
+                                                                    <li><span>Actor <label>:</label></span><a href="#">Priti kapel, Justin orjun</a></li>
+                                                                    <li><span>Genre <label>:</label></span><a href="#">Drama, Action Releas</a></li>
+                                                                    <li><span>releace <label>:</label></span><a href="#">15,10,17</a></li>
+                                                                    <li><span>languase <label>:</label></span><a href="#">english</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="social-links">
+                                                                <strong>Share :</strong>
+                                                                <a href="#" class="socila-fb"><span class="fa fa-facebook"></span></a>
+                                                                <a href="#" class="socila-tw"><span class="fa fa-twitter"></span></a>
+                                                                <a href="#" class="socila-sk"><span class="fa fa-skype"></span></a>
+                                                                <a href="#" class="socila-pin"><span class="fa fa-pinterest"></span></a>
+                                                                <a href="#" class="socila-ins"><span class="fa fa-instagram"></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="zmovo-product-list mb-30">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-5">
+                                                <div class="zmovo-product-list-item zmovo-v-box-img gradient">
+                                                    <img src="{% static 'image/product/350/2.jpg' %}" alt="">
+                                                    <div class="ply-btns">
+                                                        <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 col-md-7">
+                                                <div class="zmovo-product-list-dec">
+                                                    <div class="zmovo-trailor-meta-info">
+                                                        <div class="dec-review-dec">
+                                                            <div class="details-title">
+                                                                <a href="#">Happy in Spite of Myself Blue Strack New Movie (2018)</a>
+                                                            </div>
+                                                            <div class="ratting">
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <a href="#">6/5 ratitng</a>
+                                                            </div>
+                                                            <div class="dec-review-meta">
+                                                                <ul>
+                                                                    <li><span>Category <label>:</label></span><a href="#">English Animation Movies</a></li>
+                                                                    <li><span>Actor <label>:</label></span><a href="#">Priti kapel, Justin orjun</a></li>
+                                                                    <li><span>Genre <label>:</label></span><a href="#">Drama, Action Releas</a></li>
+                                                                    <li><span>releace <label>:</label></span><a href="#">15,10,17</a></li>
+                                                                    <li><span>languase <label>:</label></span><a href="#">english</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="social-links">
+                                                                <strong>Share :</strong>
+                                                                <a href="#" class="socila-fb"><span class="fa fa-facebook"></span></a>
+                                                                <a href="#" class="socila-tw"><span class="fa fa-twitter"></span></a>
+                                                                <a href="#" class="socila-sk"><span class="fa fa-skype"></span></a>
+                                                                <a href="#" class="socila-pin"><span class="fa fa-pinterest"></span></a>
+                                                                <a href="#" class="socila-ins"><span class="fa fa-instagram"></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="zmovo-product-list mb-30">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-5">
+                                                <div class="zmovo-product-list-item zmovo-v-box-img gradient">
+                                                    <img src="{% static 'image/product/350/3.jpg' %}" alt="">
+                                                    <div class="ply-btns">
+                                                        <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 col-md-7">
+                                                <div class="zmovo-product-list-dec">
+                                                    <div class="zmovo-trailor-meta-info">
+                                                        <div class="dec-review-dec">
+                                                            <div class="details-title">
+                                                                <a href="#">Blue in Spite of Myself Strack New Movie (2018)</a>
+                                                            </div>
+                                                            <div class="ratting">
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <a href="#">6/5 ratitng</a>
+                                                            </div>
+                                                            <div class="dec-review-meta">
+                                                                <ul>
+                                                                    <li><span>Category <label>:</label></span><a href="#">English Animation Movies</a></li>
+                                                                    <li><span>Actor <label>:</label></span><a href="#">Priti kapel, Justin orjun</a></li>
+                                                                    <li><span>Genre <label>:</label></span><a href="#">Drama, Action Releas</a></li>
+                                                                    <li><span>releace <label>:</label></span><a href="#">15,10,17</a></li>
+                                                                    <li><span>languase <label>:</label></span><a href="#">english</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="social-links">
+                                                                <strong>Share :</strong>
+                                                                <a href="#" class="socila-fb"><span class="fa fa-facebook"></span></a>
+                                                                <a href="#" class="socila-tw"><span class="fa fa-twitter"></span></a>
+                                                                <a href="#" class="socila-sk"><span class="fa fa-skype"></span></a>
+                                                                <a href="#" class="socila-pin"><span class="fa fa-pinterest"></span></a>
+                                                                <a href="#" class="socila-ins"><span class="fa fa-instagram"></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="zmovo-product-list">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-5">
+                                                <div class="zmovo-product-list-item zmovo-v-box-img gradient">
+                                                    <img src="{% static 'image/product/350/4.jpg' %}" alt="">
+                                                    <div class="ply-btns">
+                                                        <a href="#" data-video-url="https://www.youtube.com/watch?v=CsVJoCKc9rA" class="ply-btn video-popup"><img src="{% static 'image/play-button.png' %}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 col-md-7">
+                                                <div class="zmovo-product-list-dec">
+                                                    <div class="zmovo-trailor-meta-info">
+                                                        <div class="dec-review-dec">
+                                                            <div class="details-title">
+                                                                <a href="#">Strack New Movie Happy in Spite of Myself (2018)</a>
+                                                            </div>
+                                                            <div class="ratting">
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <a href="#">6/5 ratitng</a>
+                                                            </div>
+                                                            <div class="dec-review-meta">
+                                                                <ul>
+                                                                    <li><span>Category <label>:</label></span><a href="#">English Animation Movies</a></li>
+                                                                    <li><span>Actor <label>:</label></span><a href="#">Priti kapel, Justin orjun</a></li>
+                                                                    <li><span>Genre <label>:</label></span><a href="#">Drama, Action Releas</a></li>
+                                                                    <li><span>releace <label>:</label></span><a href="#">15,10,17</a></li>
+                                                                    <li><span>languase <label>:</label></span><a href="#">english</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="social-links">
+                                                                <strong>Share :</strong>
+                                                                <a href="#" class="socila-fb"><span class="fa fa-facebook"></span></a>
+                                                                <a href="#" class="socila-tw"><span class="fa fa-twitter"></span></a>
+                                                                <a href="#" class="socila-sk"><span class="fa fa-skype"></span></a>
+                                                                <a href="#" class="socila-pin"><span class="fa fa-pinterest"></span></a>
+                                                                <a href="#" class="socila-ins"><span class="fa fa-instagram"></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Filter -->
+                    <div class="product-filter mt-30">
+                        <div class="product-filter-inner">
+                            <div class="row">
+                                <!-- LIST VIEW OR GRID VIEW -->
+                                <div class="col-12 col-md-3 col-lg-4 sm-width">
+                                    <div class="product-filter-list">
+                                        <ul class="nav" role="tablist">
+                                            <li class="active"> <a href="#grid" class="active show" role="tab" data-toggle="tab"><i class="fa fa-th"></i></a></li>
+                                            <li> <a href="#list" data-toggle="tab" role="tab"><i class="fa fa-th-list"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- END LIST VIEW OR GRID VIEW -->
+                                <!-- SHORT BY -->
+                                <div class="col-12 col-md-5 col-lg-4 sm-width">
+                                    <div class="product-filter-list">
+                                        <div class="short-by-show form-inline2">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-6">
+                                                    <div class="short-by">
+                                                        <select class="selectpicker" data-live-search="true">
+                                                            <option value="" selected="selected">Sort By:</option>
+                                                            <option value="">Name (A - Z)</option>
+                                                            <option value="">Name (Z - A)</option>
+                                                            <option value="">Price (Low &gt; High)</option>
+                                                            <option value="">Price (High &gt; Low)</option>
+                                                            <option value="">Rating (Highest)</option>
+                                                            <option value="">Rating (Lowest)</option>
+                                                            <option value="">Model (A - Z)</option>
+                                                            <option value="">Model (Z - A)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-6">
+                                                    <div class="pro-show">
+                                                        <select class="selectpicker" data-live-search="true">
+                                                            <option value="" selected="selected">Show:</option>
+                                                            <option value="">25</option>
+                                                            <option value="">50</option>
+                                                            <option value="">75</option>
+                                                            <option value="">100</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END SHORT BY -->
+                                <!-- PAGINATION -->
+                                <div class="ccol-12 col-md-4 col-lg-4 pro-pagination sm-width">
+                                    <div class="product-filter-list">
+                                        <div class="pagination-wrapper">
+                                            <nav aria-label="navigations">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link pagefirst" href="#"><i class="fa fa-angle-left"></i></a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link lastpage" href="#"><i class="fa fa-angle-right"></i></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END PAGINATION -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Product Filter -->
+                </div>
+            </div>
+        </div>
+     
+</body>
+
+
+<!-- Mirrored from demos.themepul.com/zmovo/grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Apr 2022 08:04:27 GMT -->
+</html>
+
+{% endblock %}

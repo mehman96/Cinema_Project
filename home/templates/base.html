@@ -1,0 +1,71 @@
+
+{% load static  %}
+{% load i18n %}
+{% block css  %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="{% static 'image/favicon.png' %}" rel="icon" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/bootstrap-4.2.1/bootstrap.min.css'  %}">
+    <!-- END BOOTSTRAP CSS -->
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/owlcarousel/owl.carousel.css'  %}">
+    <!-- END OWL CAROUSEL -->
+
+    <!-- FONT CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{%  static 'assets/css/icofont.min.css'  %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/owlcarousel/animated.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/video/video.popup.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/slick/swiper.min.css' %}">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static  'assets/css/style.css'  %}">
+    <!-- END STYLE CSS -->
+
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" type="text/css" href="{%  static 'assets/css/responsive.css'  %}">
+    <!-- END RESPONSIVE CSS -->
+    <link href="../../fonts.googleapis.com/cssed20.css?family=Open+Sans:300,400,600,700,800%7CPoppins:200,300,400,500,600,700,800,900" rel="stylesheet">
+</head>
+<body>
+
+{% include 'includes/navbar.html' %}  
+
+{% block content  %}
+
+{% endblock  %}
+
+{% include 'includes/footer.html' %}
+
+<script src="{% static 'assets/vendor/modernizr-3.5.0.js' %}"></script>
+<script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'assets/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/video/video.popup.js' %}"></script>
+<script src="{% static 'assets/bootstrap-4.2.1/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{%  static 'assets/menu/menumaker.js' %}"></script>
+<script src="{% static 'assets/slick/swiper.min.html' %}"></script>
+<script src="{% static 'assets/js/jquery-ui.min.html' %}"></script>
+<script src="{% static 'assets/js/main.html' %}"></script>
+
+{% endblock css %}
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
